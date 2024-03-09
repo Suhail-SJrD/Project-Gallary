@@ -84,12 +84,10 @@ textarea {
 @media screen and (max-width: 714px) {
 
     body {
-        height: 900px;
+        height: 890px;
         background-position: center;
-        background-size: cover;
         color: white;
         background-image: linear-gradient(to right, rgba(3, 4, 4, 0.378), rgba(0, 0, 0, 0.411)), url('./Login\ img.jpg');
-
     }
 
     .Login_space>form {
@@ -97,26 +95,40 @@ textarea {
         display: inline-block;
         display: flex;
         position: absolute;
-        left: -133px;
-        font-size: 30px;
+        left: -57px;
+        font-size: 20px;
+        width: 10rem;
 
     }
 
-    .main_container>.Login_space>form>label{
+    .Login_space>form>h2 {
+        width: 10rem;
+        position: relative;
+        left: -40px;
+    }
+
+    .main_container>.Login_space>form>label {
         line-height: 5rem;
+        width: 10rem;
+        position: relative;
+        left: -105px;
     }
 
-    .main_container>.Login_space>form>input{
-        width: 290px;
-        height: 90px;
+
+    .main_container>.Login_space>form>input {
+        width: 230px;
+        height: 35px;
+        position: relative;
+        left: -105px;
     }
 
-    .Login_space>form>.submit_button>button{
+    .Login_space>form>.submit_button>button {
         display: inline;
         color: white;
-        font-size: 10px;
+        font-size: 15px;
         position: relative;
         bottom: 60px;
+        left: -105px;
     }
 
 }
