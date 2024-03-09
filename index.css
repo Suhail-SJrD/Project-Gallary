@@ -1,0 +1,122 @@
+/*  fonts */
+
+@font-face {
+    font-family: fontss;
+    /* src: url("../fonts/inter/Inter/static/Inter-SemiBold.ttf"); */
+    src: url("./Inter-SemiBold.ttf");
+}
+
+body {
+    background: url("./Login\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fontss;
+}
+
+.Login_space {
+    position: absolute;
+    top: 13rem;
+    left: 4rem;
+    font-size: 1.5rem;
+}
+
+.Login_space>form {
+    /* border: 2px solid black; */
+    /* box-shadow: 0px 0px 10px 1px; */
+    display: flex;
+    flex-direction: column;
+    width: 29rem;
+    padding-left: 8rem;
+    height: 25rem;
+    border-radius: 10px;
+
+}
+
+.Login_space>form>input {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    box-shadow: -1px 1px 14px 3px
+}
+
+.main_container>.Login_space>form>input,
+textarea {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding-left: 1rem;
+}
+
+
+
+.Login_space>form>label {
+    line-height: 3rem;
+}
+
+.Login_space>form>.submit_button>button {
+    top: 1rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid green;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.Login_space>form>.submit_button>button:hover {
+    background-color: green;
+    color: white;
+}
+
+.Login_space>form>.submit_button {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+@media screen and (max-width: 714px) {
+
+    body {
+        height: 900px;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        background-image: linear-gradient(to right, rgba(3, 4, 4, 0.378), rgba(0, 0, 0, 0.411)), url('./Login\ img.jpg');
+
+    }
+
+    .Login_space>form {
+
+        display: inline-block;
+        display: flex;
+        position: absolute;
+        left: -133px;
+        font-size: 30px;
+
+    }
+
+    .main_container>.Login_space>form>label{
+        line-height: 5rem;
+    }
+
+    .main_container>.Login_space>form>input{
+        width: 290px;
+        height: 90px;
+    }
+
+    .Login_space>form>.submit_button>button{
+        display: inline;
+        color: white;
+        font-size: 10px;
+        position: relative;
+        bottom: 60px;
+    }
+
+}
